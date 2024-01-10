@@ -1,0 +1,30 @@
+.redes-sociais, .contatos-footer {
+    display: flex;
+    width: 940px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.redes-sociais img{
+    width: 100%;
+}
+.redes-sociais a{
+    width: 60px;
+    padding: 30px;
+}
+.contatos-footer p, a{
+    color: whitesmoke;
+    padding: 20px;
+}
+@media screen and (max-width: 480px){
+    .redes-sociais, .contatos-footer {
+        width: 100%;        
+    }
+    .redes-sociais a{
+        width: 100%;
+        padding: 15px;
+    }
+    .contatos-footer{
+        flex-direction: column;
+    }
+   
+}

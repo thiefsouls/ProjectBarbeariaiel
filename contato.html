@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="logo.png">
+        <title>Produtos - Barbearia Iel</title>
+        <link rel="stylesheet" href="limpar.css">
+        <link rel="stylesheet" href = "cabecalhoRodape.css"/>
+        <link rel="stylesheet" href="contato.css">
+        <link rel="stylesheet" href="estilo.css">
+        <script src="index.js"></script>  
+    </head>
+    <body >
+  <header>
+         <div class="caixa">
+                <h1><img src="logo.png" alt="logo barbearia"/></h1>
+                <nav>
+                    <ul class="navegacao">                    
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                         <li><a href="#"
+            onclick="window.open('http://127.0.0.1:8000/perguntas/chatbot/10105560581916',
+                                 '',
+                                 'width=410,height=450')">
+                Chatbot</a><li>    
+                    </ul>
+                </nav>
+            </div>            
+ </header>
+        <main> 
+            <form>
+                <label for="nome-completo">Nome Completo</label>
+                <input class="input-padrao" id="nome-completo" type="text" required/>
+
+                <label for="email">Email</label>
+                <input class="input-padrao" placeholder="seuemail@dominio.com"  id="email" type="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input class="input-padrao" placeholder="(DDD) XXXXXXXXX"  id="telefone" type="tel" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea class="input-padrao" id="mensagem" cols="70" rows="10" required></textarea>
+                
+                <fieldset>
+                    <legend>Como prefere nosso contato?</legend>
+                    <label for="radio-email">
+                        <input name="contato" id="radio-email" type="radio" value="email">
+                        Email
+                    </label>    
+    
+                    <label for="radio-telefone">
+                        <input name="contato" id="radio-telefone" type="radio" value="telefone">
+                        Telefone
+                    </label>
+                    
+    
+                    <label for="radio-whatsapp">
+                        <input name="contato" id="radio-whatsapp" type="radio" value="whatsapp" checked>
+                        Whatsapp
+                    </label>                    
+                </fieldset>
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                <label class="label-checkbox" for="checkbox">
+                    <input id="checkbox" onclick="enviar_formulario()" type="checkbox" checked>
+                    Gostaria de receber nossas novidades por email?
+                </label>
+                
+
+                <input id="enviar-formulario" class="enviar" type="submit" value="Enviar formulário">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Dia 
+                        </th>
+                        <th>
+                           Horário
+                        </th>                  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Segunda
+                        </td>
+                        <td>
+                            8h - 20h
+                        </td>                   
+                    </tr>
+                    <tr>
+                        <td>
+                            Quarta
+                        </td>
+                        <td>
+                            8h - 20h
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            Sexta
+                        </td>
+                        <td>
+                            8h - 20h
+                        </td> 
+                    </tr>
+                </tbody>                           
+            </table>
+        </main>
+        <footer>
+            <img src="logo-branco.png" alt="logo.png">
+            <div class="redes-sociais">
+                <a href="https://www.facebook.com/Faculdades-da-Ind%C3%BAstria-550366228666421/" target="_blank"><img src="icone_facebook.png" alt="Icone Facebook"></a>
+                <a href="https://www.instagram.com/faculdadesdaindustria/" target="_blank"><img src="icone_instagram.png" alt="Icone Instagram"></a>
+                <a href="https://www.linkedin.com/school/faculdade-da-ind%C3%BAstria-afonso-pena/about/" target="_blank"><img src="icone_linkedin.png" alt="Icone Linkedin"></a>
+                <a href="https://github.com/Hobbies-Prof-Bento/OficinaHtmlCssIel" target="_blank"><img src="icone_github.png" alt="Icone Github"></a>
+            </div>
+            <div class="contatos-footer">
+                <p>(41) 2104 - 6828</p>
+                <a href="mailto:">contato@faculdadedaindustria.com.br</a>
+            </div>
+            <p>&copy;Copyright Barbearia Iel - 2021</p>
+        </footer> 
+        
+    </body>
+</html>

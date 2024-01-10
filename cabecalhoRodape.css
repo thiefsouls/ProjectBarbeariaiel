@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    cursor:url("tesoura.cur"),default;
+}
+/* Cabeçalho */
+header {
+    background: #bbb;
+    padding: 20px 0;
+}
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav {
+    position: absolute;
+    top: 45%;
+    right: 0; 
+}
+.navegacao li {
+    display: inline;
+    margin-left: 15px;  
+}
+.navegacao a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+.navegacao a:hover{
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+/* Rodapé */
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+footer>p {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 480px){
+    .caixa {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+    nav {
+        position: static;
+        padding: 15px 0;
+    }
+   .navegacao li {
+       margin: 0;       
+   }
+   .navegacao a {
+       padding: 10px 5px;
+   }
+}
